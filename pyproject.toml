@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "msslava_brain_games"
+version = "0.1.0"
+description = "My Description"
+authors = ["Vyacheslav Matyushin <musicman_08@mail.ru>"]
+packages = [
+  { include = "brain_games" },
+]
+
+[tool.poetry.dependencies]
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
